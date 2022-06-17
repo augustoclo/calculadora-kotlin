@@ -1,0 +1,22 @@
+fun main(){
+    println("Escolha uma opção para realizar a operação matemática:")
+    println("Opção 1: Soma")
+    println("Opção 2: Subtração")
+    println("Opção 3: Divisão")
+    println("Opção 4: Multiplicação")
+    
+    val operacao = readLine()!!.toInt()
+    
+    println ("Digite o primeiro número a ser calculado")
+    var numero1 = readLine()!!.toInt()
+    
+    println ("Digite o segundo número a ser calculado")
+    var numero2 = readLine()!!.toInt()
+    
+    when (operacao){
+        1 -> println("A soma de $numero1 + $numero2 é : ${numero1 + numero2}")
+        2 -> println("A subtração de $numero1 - $numero2 é : ${numero1 - numero2}")
+        3 -> println("A divisão de $numero1 / $numero2 é : ${numero1 / numero2}")
+        4 -> println("A multiplicação de $numero1 x $numero2 é : ${numero1 * numero2} e o resto da operação é ${numero1 % numero2}")
+    }
+}
